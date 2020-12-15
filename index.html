@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3 id="date"></h3>
+            <h1 id="time"></h1> 
+        </div>
+        <div class="box">
+            <h2 id="countdown-label">Countdown Timer</h2>
+            <h3 id="countdown">00:00:00</h3>
+            <div id="countdown-box">
+                <input type="date" id="countdown-date">
+                <input type="time" id="countdown-time" step="1">
+            </div>
+            <button id="countdown-button-set" onclick="setCountdown()">Set Countdown</button>
+            <button id="countdown-button-reset" onclick="resetCountdown()">Reset</button>
+        </div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>
